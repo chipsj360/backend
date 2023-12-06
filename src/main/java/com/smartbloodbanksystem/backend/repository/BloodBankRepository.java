@@ -1,6 +1,9 @@
 package com.smartbloodbanksystem.backend.repository;
 
+import com.smartbloodbanksystem.backend.model.BloodBank;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface BloodBankRepository extends JpaRepository<BloodBankRepository,Long> {
+@Repository
+public interface BloodBankRepository extends JpaRepository<BloodBank,Long> {
 }

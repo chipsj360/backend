@@ -10,6 +10,7 @@ import lombok.Setter;
 public class Blood {
     @Id
     @GeneratedValue
+    @Column(name = "blood_id")
     private Long id;
     private String bloodGroup;
     private int phoneNumber;
