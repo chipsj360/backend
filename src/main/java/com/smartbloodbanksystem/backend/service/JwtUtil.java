@@ -6,15 +6,16 @@ import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.stereotype.Service;
 
 import java.security.Key;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Function;
-
+@Service
 public class JwtUtil {
-    private final String SECRET_KEY = "4aSUx0XE5Hx59ivaERwNXgPTnBJFPmWuWiKrOD6mfUzM1kUBMv/Pfmy5sWyBRzT43Ku6TrvyVWJzn22lIZoEuWi5M+5JW1a2vt79QUFp2/o=";
+    private final String SECRET_KEY = "TIpNB3NPnyJOK1O6+ItlJEI0kkDcLUYhG55zwJBjwNeKz8Oo6kk63UjuFet++Z5Qd+f3llpWbZnS3Axxp/N1OQX0uMwhgPbfAYtS/PeUuu4=\n";
 
     // method for extracting the username of the user
     public String extractUsername(String token) {

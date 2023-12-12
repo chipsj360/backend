@@ -17,7 +17,4 @@ public class Blood {
 
     private double currentQuantity;
 
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name="donor_id", referencedColumnName="donor_id")
-    private Donor donor;
 }

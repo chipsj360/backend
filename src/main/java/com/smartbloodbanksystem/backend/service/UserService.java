@@ -33,6 +33,7 @@ public class UserService {
         var user = User.builder()
                 .firstName(request.getFirstName())
                 .lastName(request.getLastname())
+                .userName(request.getUserName())
                 .password(passwordEncoder.encode(request.getPassword()))
                 .role(Role.USER)
                 .build();
